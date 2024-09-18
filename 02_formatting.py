@@ -34,32 +34,39 @@ print("")
 # Variable = cat_sentence
 def dog_sentence():
      # User inputs sentence with "cat"
-     cat_sentence = str(input("Enter a sentence using the word cat AT LEAST 3 times (where capitlizaed or not): "))
-    # Replace all "cat" words with "dog" words
+     cat_sentence = str(input("Enter a sentence using the word cat AT LEAST 3 times (where first letters are capitalized or not): "))
+    # Replace all "cat" words with "dog" words abd print sentence
+     dog_sentence = cat_sentence.replace("cat", "dog").replace("Cat", "Dog")
+     print("")
+     print(dog_sentence)
+dog_sentence()
+print("")
+    
+# Task 4: User inputs name and age and gets printed
+# Define function = personal_info
+# Variables = name, age
+def personal_info():
+     # User inputs name
+     name = str(input("Enter your name: "))
+     # User inputs age
+     age = int(input("Enter your age: "))
+     # Print name and age
+     print("")
+     print(f"Your name is {name} and your age is {age}!")
+personal_info()
+print("")
 
-# Task 4
-
-# Task 5
-
-
-# """
-# TASK 3:
-
-# Write a program that will replace the word "cat" with the word "dog"
-# It should replace all occurances regardless of captilization 
-# """
-
-
-# """
-# TASK 4:
-
-# Write a program that takes a person's name and age as input and prints it
-# """
-
-
-# """
-# TASK 5:
-
-# Write a program that takes in two floats, and prints the quotient
-# The result should be rounded to the nearest tenth (1 decimal place)
-# """
+# Task 5: User inputs two floats and quotient is rounded to the nearest tenth and printed
+# Define function = division
+# Variables = dividend, divisor
+def division():
+     # User inputs dividend
+     dividend = float(input("Enter a number: "))
+     # User inputs divisor
+     divisor = float(input("Enter a number to divide the previous number by: "))
+     # Calculate quotient and round to nearest tenth
+     quotient = round(dividend / divisor, 1)
+     print("")
+     print(f"The quotient is {quotient:.1f}")
+division()
+print("")
