@@ -1,4 +1,4 @@
-# Task 1: Creating the float. Then, converting this float into an integer and printing the outputs.
+## Task 1: Creating the float. Then, converting this float into an integer and printing the outputs.
 # Variable = bazingas
 bazingas = 5.32
 
@@ -9,7 +9,7 @@ print(bazingas)
 print(int(bazingas))
 print("")
 
-# Task 2: Print output whether user-inputted number is positive, negative, or zero using if/else/elif satements
+## Task 2: Print output whether user-inputted number is positive, negative, or zero using if/else/elif satements
 # Variable = positivity
 positivity = float(input("I will tell if your number is positive, negative, or zero. Enter a number : "))
 
@@ -23,7 +23,7 @@ else:
 
 print("")
 
-# Task 3: Input two numbers, integer and float, perform math, and print results
+## Task 3: Input two numbers, integer and float, perform math, and print results
 # Variables = your_int, your_float | User will be given order of results
 your_int = int(input("Enter an integer (no decimals) : "))
 your_float = float(input("Enter a decimal number: "))
@@ -37,7 +37,7 @@ print(your_int * your_float)
 print(your_int / your_float)
 print("")
 
-# Task 4: Create dicitionary with keys being fruit names and values as quantities, and print the quanity of one fruit.
+## Task 4: Create dicitionary with keys being fruit names and values as quantities, and print the quanity of one fruit.
 # Variable name = fruits
 fruits = {
     "bananas": 5,
@@ -51,7 +51,7 @@ print("Here's a random number of oranges:")
 print(fruits["oranges"])
 print("")
 
-# Task 5 Create string var with a list of numbers and convert string into tuple and print out original string + tuple
+## Task 5 Create string var with a list of numbers and convert string into tuple and print out original string + tuple
 # Variable name = num_list 
 num_list = "707, 717, 727, 737, 747, 757, 767, 777, 787"
 

@@ -1,4 +1,4 @@
-# Task 1: Check if user inputted correct pwd (NOT case sensitive)
+## Task 1: Check if user inputted correct pwd (NOT case sensitive)
 # Define Function = check
 # Variable = password
 def check():
@@ -14,7 +14,7 @@ def check():
 check()
 print("")
 
-# Task 2: Check if user input is empty. Print result based on input
+## Task 2: Check if user input is empty. Print result based on input
 # Define function = emptiness
 # Variable = empty_string
 def emptiness():
@@ -29,7 +29,7 @@ def emptiness():
 emptiness()
 print("")
 
-# Task 3: User inputs sentence with the word "cat" used multiple times throughout. Each "cat" is replaced with "dog" regardless of capitalization
+## Task 3: User inputs sentence with the word "cat" used multiple times throughout. Each "cat" is replaced with "dog" regardless of capitalization
 # Define function = dog_sentence
 # Variable = cat_sentence
 def dog_sentence():
@@ -42,7 +42,7 @@ def dog_sentence():
 dog_sentence()
 print("")
     
-# Task 4: User inputs name and age and gets printed
+## Task 4: User inputs name and age and gets printed
 # Define function = personal_info
 # Variables = name, age
 def personal_info():
@@ -56,7 +56,7 @@ def personal_info():
 personal_info()
 print("")
 
-# Task 5: User inputs two floats and quotient is rounded to the nearest tenth and printed
+## Task 5: User inputs two floats and quotient is rounded to the nearest tenth and printed
 # Define function = division
 # Variables = dividend, divisor
 def division():
