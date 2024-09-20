@@ -2,12 +2,15 @@
 # Variable = the_ten
 print("")
 the_ten = 22
-# Check integer
+# If even and greater than or equal to 10
 if the_ten % 2 == 0 and the_ten >= 10:
-    print(True)
-else:
-    print(False)
-print("")
+    print(f"{the_ten} is even and greater than or equal to 10.")
+# If even but not greater than or equal to 10
+elif the_ten % 2 == 0 and not the_ten >= 10:
+    print("")
+    print(f"{the_ten} is even but not greater than or equal to 10.")
+# HOLD here due to 5th ending
+
 
 # Ex 2: Determint ticket price based on age and student status. <18 OR student = $10, $20 otherwise
 # Variables = student, age
@@ -33,15 +36,29 @@ else:
 print("")
 
 # Ex 4: Check if year is a century year AND a leap year
-year = 2004
+# Variable = year
+year = 2001
+# Confirm both conditions are met
+if year % 100 == 0 and year % 4 == 0:
+    print("")
+    print(f"Yes, {year} is a century year and a leap year.")
 
-# HOLD at ex 4 due to cleanup
+# If leap year but not a century year
+elif year % 100 != 0 and year % 4 == 0:
+    print("")
+    print(f"Yes, {year} is a leap year but not a century year.")
 
+# If a century year but not a leap year
+elif year % 100 == 0 and year % 4 != 0:
+    print("")
+    print(f"Yes, {year} is a century year but not a leap year.")
 
-# '''
-# Exercise 4:
-# Check if a year is a century year and a leap year.
-# '''
+# If neither century year nor a leap year
+else:
+    print("")
+    print(f"No, {year} is not a century year or a leap year.")
+print("")
+
 
 # '''
 # Exercise 5:
