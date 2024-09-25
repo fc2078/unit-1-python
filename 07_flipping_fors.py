@@ -56,4 +56,4 @@ print(
 print("")
 
 ## Q: What do you notice about the output of your code? Is it what you expected?
-# A: Most outputs are listed one line at a time. What this means is that a new line is used for each character printed, word length printed, and the key-value pair printed. I was expecting this for the most part because it would be easier to list line by line.
+# A: Most outputs are listed one line per iteration. What this means is that a new line is used for each character printed, word length printed, and the key-value pair printed. I was expecting this for the most part because it would be easier to list line by line.
