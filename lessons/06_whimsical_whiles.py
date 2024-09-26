@@ -1,4 +1,4 @@
-print("")
+print()
 
 ## Ex 1: Simple counter printing numbers from 1-10 using while loop
 # Variable = simple_counter
@@ -7,7 +7,7 @@ simple_counter = 1
 while simple_counter <= 10:
     print(simple_counter)
     simple_counter += 1
-print("")
+print()
 
 ## Ex 2: Counter reverse printing numbers from 10-1 using while loop
 # Variable = reverse_counter
@@ -16,7 +16,7 @@ reverse_counter = 10
 while reverse_counter >= 1:
     print(reverse_counter)
     reverse_counter -= 1
-print("")
+print()
 
 ## Ex 3: Calculate factorial of given number using while loop
 # Variable = factorial | User inputs number to calculate factorial
@@ -27,7 +27,7 @@ while factorial > 1:
     result *= factorial
     factorial -= 1
 print(f"The factorial of {4} is {result}.")
-print("")
+print()
 
 ## Simple password guessing game using while loop. Ask user to guess predefined password and provide feedback.
 # Variable = predefined_password | Define pwd
@@ -39,7 +39,7 @@ while guess != predefined_password:
     print("Incorrect password! Try again.")
     guess = input("Guess the password: ")
 print("Congratulations! You guessed the correct password.")
-print("")
+print()
 
 ## Ex 5: Calculate sum of digits of a given number using FOR loop (Forlenza advised this was extra credit, must use a FOR loop instead)
 # Variable = digits_number | User inputs number to calculate sum of digits
@@ -51,7 +51,7 @@ digit = 0
 for digit in str(digits_number):
     sum_digits += int(digit)
 print(f"The sum of the digits of {digits_number} is {sum_digits}.")
-print("")
+print()
 
 ## Ex 6: Print first n numbers in the Fibonacci sequence using while loop (ALSO extra credit)
 # Variable = n | User inputs number of Fibonacci numbers to print
@@ -69,4 +69,4 @@ while len(fib_sequence) < n:
 
 # Print the Fibonacci sequence
 print(f"The first {n} numbers in the Fibonacci sequence are: {fib_sequence}")
-print("")
+print()

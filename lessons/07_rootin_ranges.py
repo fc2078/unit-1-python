@@ -1,21 +1,21 @@
-print("")
+print()
 ## Ex 1: Write a program to print numbers from 1 to 10 using a for loop.
 # Define variable and range in for loop. Print resulting range.
 for x in range(1, 11):
     print(x)
-print("")
+print()
 
 ## Ex 2: Write a program to count by 10s from 900 to 1000
 # Define variable, range, and increment in for loop. Print resulting range.
 for x in range(900, 1001, 10):
     print(x)
-print("")
+print()
 
 ## Ex 3: Write a program counting from 1-100 by 9
 # Define variable, range, and increment in for loop. Print resulting range.
 for x in range(1, 101, 9):
     print(x)
-print("")
+print()
 
 ## Ex 4: Write a program to calculate the sum of all numbers from 1 to 10 using a for loop.
 # Variable = sum | Set sum
@@ -26,7 +26,7 @@ for x in range(1, 11):
     sum += x
 # Print the sum of all numbers from 1 to 10
 print(sum)
-print("")
+print()
 
 ## Ex 5: Run uncommenented code.
 ## Answer these questions:
@@ -38,7 +38,7 @@ rows = 5
 for i in range(rows):
     for j in range(i + 1):
         print("*", end=" ")
-print("")
+print()
 
 ## Answers
 # 1. The output is a pyramid of asterisks with 5 rows.
