@@ -102,3 +102,11 @@ while True:
     else:
         print("Invalid command! Please try again.")
 print()
+
+## Access todos file to read and write data
+with open("todos.txt") as file:
+    contents = file.readlines()
+print(contents)
+
+
+## FUTURE: Write functions in each command
