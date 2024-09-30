@@ -30,11 +30,8 @@ todo_file = "todos.txt"
 # Function to load todos from a file
 # note: Some research has been done to enchance my tracker even further.
 def load_todos():
-    try:
-        with open(todo_file, "r") as file:
-            return [line.strip() for line in file.readlines()]
-    except FileNotFoundError:
-        return []
+    with open(todo_file, "r") as file:
+        return [line.strip() for line in file.readlines()]
 
 
 # Function to save todos to a file
@@ -54,7 +51,7 @@ def add_todo(task):
     todos.append(task)
     save_todos()
     print()
-    print(f"{task} has been added to your list!")
+    print(f"{task} has been added to your list! Use 'view' to see the updated list.")
     print()
 
 
@@ -64,7 +61,9 @@ def remove_todo(task):
         todos.remove(task)
         save_todos()
         print()
-        print(f"{task} has been removed from your list!")
+        print(
+            f"{task} has been removed from your list! Use 'view' to see the updated list."
+        )
         print()
     else:
         print()
@@ -92,7 +91,7 @@ def edit_todo(task):
         todos[todos.index(task)] = new_task
         save_todos()
         print()
-        print("Your todo has been updated!")
+        print("Your todo has been updated! Use 'view' to see the updated list.")
         print()
     else:
         print()

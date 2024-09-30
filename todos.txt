@@ -1,2 +1,7 @@
-rizz
-sigma
+radio
+keys
+camera
+flashlight
+phone
+lighter
+wallet
