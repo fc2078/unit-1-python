@@ -1,4 +1,4 @@
-## Todo Tracker in Service!
+# Todo Tracker in Service!
 # Print welcome message and instructions
 print()
 print("Welcome to the Todo Tracker!")
@@ -20,14 +20,39 @@ print()
 print("Let's get started.")
 print()
 
-# Initialize an empty list to store todo items. Define this list.
+# Initialize an empty list to store todo items
 todos = []
+
+# Define the file name to a var to store todos
+todo_file = "todos.txt"
+
+
+# Function to load todos from a file
+# note: Some research has been done to enchance my tracker even further.
+def load_todos():
+    try:
+        with open(todo_file, "r") as file:
+            return [line.strip() for line in file.readlines()]
+    except FileNotFoundError:
+        return []
+
+
+# Function to save todos to a file
+def save_todos():
+    with open(todo_file, "w") as file:
+        for task in todos:
+            file.write(task + "\n")
+
+
+# Load todos from the file at the start by defining the todos variable
+todos = load_todos()
 
 
 ## Define functions to handle user commands
 # Function to add a new todo item
 def add_todo(task):
     todos.append(task)
+    save_todos()
     print()
     print(f"{task} has been added to your list!")
     print()
@@ -37,8 +62,9 @@ def add_todo(task):
 def remove_todo(task):
     if task in todos:
         todos.remove(task)
+        save_todos()
         print()
-        print(f"{task} as been removed from your list!")
+        print(f"{task} has been removed from your list!")
         print()
     else:
         print()
@@ -64,6 +90,7 @@ def edit_todo(task):
     if task in todos:
         new_task = input(f"What would you like to replace {task} with?: ")
         todos[todos.index(task)] = new_task
+        save_todos()
         print()
         print("Your todo has been updated!")
         print()
@@ -76,6 +103,7 @@ def edit_todo(task):
 # Function to clear the list of todos
 def clear_todos():
     todos.clear()
+    save_todos()
     print()
     print("All todos have been cleared!")
     print()
@@ -83,7 +111,9 @@ def clear_todos():
 
 ## Present options to the user and handle their input
 while True:
-    user_input = input("Enter an action: add, remove, view, edit, exit: ").lower()
+    user_input = input(
+        "Enter an action: add, remove, view, edit, clear, exit: "
+    ).lower()
     if user_input == "add":
         task = input("What would you like to add?: ")
         add_todo(task)
@@ -95,6 +125,8 @@ while True:
     elif user_input == "edit":
         task = input("What todo item would you like to edit?: ")
         edit_todo(task)
+    elif user_input == "clear":
+        clear_todos()
     elif user_input == "exit":
         print("Goodbye! Thanks for using the Todo Tracker.")
         print()
@@ -102,11 +134,3 @@ while True:
     else:
         print("Invalid command! Please try again.")
 print()
-
-## Access todos file to read and write data
-with open("todos.txt") as file:
-    contents = file.readlines()
-print(contents)
-
-
-## FUTURE: Write functions in each command
