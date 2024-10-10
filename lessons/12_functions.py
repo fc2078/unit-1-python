@@ -4,6 +4,7 @@ print()
 # Task 1: Greeting | Write a function that takes a name as a parameter and prints a greeting message like "Hello, [name]!".
 # Function = welcome | Param: name
 def welcome(name):
+    """User inputs name to print welcome message."""
     # Print a greeting message using the provided name.
     print("Hello " + name + ", welcome to lesson 12!")
 
@@ -21,6 +22,7 @@ print()
 # Task 2: Square of a Number | Write a function that takes an integer as an argument and returns its square.
 # Function = square | Param: sq_number
 def square(sq_number):
+    """User inputs number to find the square of."""
     # Return the square of the provided number.
     return f"The square of {sq_number} is " + str(sq_number**2)
 
@@ -38,6 +40,7 @@ print()
 # Task 3: Even or Odd | Write a function that takes a number as a argument that returns `True` if the number is even, and `False` otherwise.
 # Function = even | Param: ev_number
 def even(ev_number):
+    """User inputs number to check if even or odd."""
     # Return boolean value of result | True = even, False = odd
     return ev_number % 2 == 0
 
@@ -55,6 +58,7 @@ print()
 # Task 4: Area of a Rectangle | Write a function that takes the length and width of a rectangle and returns its area.
 # Function = rectangle | Params: length, width
 def rectangle(length, width):
+    """User inputs length and width, then multiply those inputs to find area of rectangle."""
     # Return the area of the rectangle using the provided length and width.
     return f"The area of the rectangle is: " + str(length * width)
 
@@ -72,6 +76,7 @@ print()
 
 # Task 5: Celsius to Fahrenheit | Write a function that takes a temperature in Celsius and returns the equivalent temperature in Fahrenheit using the correct formula
 def c_2_f(celsius):
+    """User inputs a temperature in Celsius to convert to Fahrenheit."""
     # Return the equivalent temperature in Fahrenheit using the provided Celsius temperature.
     return f"The equivalent temperature in Fahrenheit is: " + str(
         (celsius * 9 / 5) + 32
@@ -91,6 +96,7 @@ print()
 # Task 6: Average of Numbers | Write a function that takes a list of numbers and returns the average (mean) of those numbers.
 # Function: mean | Param: nums
 def mean(nums):
+    """User inputs a list of numbers, separated by commas, and the mean of the total is returned."""
     # Return the average of the provided numbers using the sum and len functions.
     return f"The average of the numbers is: " + str(sum(nums) / len(nums))
 
@@ -108,6 +114,7 @@ print()
 
 # Task 7: Total Calculator | Create a function that has arguments for the price and quantity of something, and returns the total.
 def total_calculator(price, quantity):
+    """User inputs price and quantity, then multiply the two to find the total cost."""
     # Return the total cost of the items, including the discount if provided.
     total = price * quantity
     return f"The total cost of {quantity} items at ${price} each is ${total}"
