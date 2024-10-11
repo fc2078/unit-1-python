@@ -51,6 +51,40 @@ print(cat.speak())  # Output: Meow!
 print()
 
 
-# """
-# Task 3: Banking | Create a class BankAccount with attributes balance and owner. Include methods for depositing and withdrawing money, which should modify the balance attribute. Test these methods with instances of the class.
-# """
+# Task 3: Banking | Create a class BankAccount with attributes balance and owner. Include methods for depositing and withdrawing money, which should modify the balance attribute. Test these methods with instances of the class. Class BankAccount with attributes balance and owner
+# Class BankAccount with methods for actions.
+class BankAccount:
+    # Initialize objects with attributes balance and owner
+    def __init__(self, owner, balance=0):
+        self.owner = owner
+        self.balance = balance
+
+    # Method to deposit money into the account
+    def deposit(self, amount):
+        if amount > 0:
+            self.balance += amount
+            return f"{amount} deposited successfully. New balance: {self.balance}"
+        else:
+            return "Invalid deposit amount. Please enter a positive value."
+
+    # Method to withdraw money from the account
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.balance:
+            self.balance -= amount
+            return f"{amount} withdrawn successfully. Remaining balance: {self.balance}"
+        elif amount <= 0:
+            return "Invalid withdrawal amount. Please enter a positive value."
+        else:
+            return "Insufficient funds for this withdrawal."
+
+
+# Test the BankAccount class
+account1 = BankAccount("Kyle Broflovski")
+print(account1.deposit(1000))  # Output: 1000 deposited successfully. New balance: 1000
+print(
+    account1.withdraw(500)
+)  # Output: 500 withdrawn successfully. Remaining balance: 500
+print(account1.withdraw(600))  # Output: Insufficient funds for this withdrawal.
+print(
+    account1.withdraw(-100)
+)  # Output: Invalid withdrawal amount. Please enter a positive value.
